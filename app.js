@@ -16,3 +16,8 @@ $('experience-link').onclick=()=>{experienceDialog.showModal();document.body.cla
 $('experience-close').onclick=()=>experienceDialog.close();
 experienceDialog.addEventListener('close',()=>{document.body.classList.remove('modal-open');$('experience-link').focus()});
 experienceDialog.addEventListener('click',e=>{if(e.target===experienceDialog){const r=experienceDialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)experienceDialog.close()}});
+const interviewDialog=$('interview-dialog');
+$('interview-link').onclick=()=>{interviewDialog.showModal();document.body.classList.add('modal-open')};
+$('interview-close').onclick=()=>interviewDialog.close();
+interviewDialog.addEventListener('close',()=>{if(!$('answer-dialog').open)document.body.classList.remove('modal-open');if(!$('answer-dialog').open)$('interview-link').focus()});
+interviewDialog.addEventListener('click',e=>{const link=e.target.closest('[data-open-question]');if(link){interviewDialog.close();show(Number(link.dataset.openQuestion));return}if(e.target===interviewDialog){const r=interviewDialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)interviewDialog.close()}});

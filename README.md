@@ -10,6 +10,8 @@ Click a question to read its complete answer. Close with the Close control, Esca
 
 The **Experience** control in the top navigation opens an eight-role work history grouped by employer, with dates, durations, and short duty summaries. It is based on the September 2026 employer letters; the letters themselves are not published on this site.
 
+The **Interview day** control opens a consultant-guidance checklist for Zoom setup, study and funding questions, the sponsor affidavit, and employment verification. It links to relevant answers in the 63-question guide. The affidavit itself, identity numbers, asset values, and bank balance are not published on the site; verify those against the original documents before the call.
+
 The four-column desktop overview fits all 63 questions at 1280 × 720. Smaller screens use fewer columns and readable text. The original source PDF, preparation notes, and confirmation placeholders are retained.
 
 ## Offline use
